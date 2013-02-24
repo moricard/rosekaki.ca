@@ -38,6 +38,7 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
+    height: 30px;
 }
 
 .block {
@@ -58,6 +59,16 @@ a {
     width: 640px;
     margin: 0 auto;
     top: 100px;
+}
+
+#sand-blocker {
+    width: 100%;
+    background-color: #f3eeda;
+    height: 100px;
+    position: fixed;
+    visibility: visible;
+    top: 0;
+    z-index: 10;
 }
 
 #logo {
@@ -110,4 +121,5 @@ a {
     width: 100%;
     position: relative;
     height: 88px !important;
+    background-color: #f3eeda;
 }

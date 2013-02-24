@@ -1,15 +1,15 @@
 $(document).ready(function() {
 
     var height = $(window).height()
-    ,   margin = 200;
-
-    $('#block-1').height( height - margin );
-
-    var logo = $('#logo')
+    ,   margin = 200
+    ,   logo = $('#logo')
     ,   subLogo = $('#logo-sub')
     ,   greenBlocker = $('#green-blocker')
     ,   redBlocker = $('#red-blocker')
-    ,   nav = $('#nav');
+    ,   nav = $('#nav')
+    ,   fixed = false;
+
+    $('#block-1').height( height - margin );
 
     $(window).scroll(function() {
 	
@@ -17,14 +17,38 @@ $(document).ready(function() {
 
         var scrollTop = getScrollTop()
         ,   logoOffset = logo.offset().top
-        ,   navOffset = Math.min( 0, (scrollTop *0.3)- 130);
+        ,   navOffset = Math.min( 100, (scrollTop *0.3) - 130);
 
         subLogo.css({
             'top' : (scrollTop * 0.6 + 88) + 'px'
         });
 
-        logo.css({'top' : (scrollTop * 0.6) + 'px'});
+        if ( !fixed ) {
+            logo.css({'top' : (scrollTop * 0.6) + 'px'});
+            if (scrollTop >= logoOffset ){
+                logo.css({
+                    'position' : 'fixed'
+                    , 'top'      : 0
+                });            
+                fixed = !fixed;
+            }
 
+        } else if ( fixed && scrollTop < 500 ) {
+            logo.css('position', 'relative');
+            fixed = !fixed;
+        }
+
+/*
+        if ( !(fixed = (scrollTop >= logoOffset)) ) {
+            logo.css({'top' : (scrollTop * 0.6) + 'px'});
+        } else if ( fixed && scrollTop < 450 ) {
+            logo.css('position', 'relative');
+        } else if ( scrollTop >= 450){
+            logo.css('position','fixed')
+                .css('top', 0);
+        }
+        console.log(fixed);
+*/
         nav.css({'top' : navOffset + 'px' });
 	
     });
