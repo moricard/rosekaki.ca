@@ -29,7 +29,10 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/2', function( req, res ) {
-  res.render('index2', { title: 'Express' });
+  res.render('index2', { title: 'Rose Kaki - Savonnerie Artisanale' });
+});
+app.get('/3', function( req, res ) {
+  res.render('index3', { title: 'Rose Kaki - Savonnerie Artisanale' });
 });
 app.get('/users', user.list);
 

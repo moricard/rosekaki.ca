@@ -32,6 +32,29 @@ a {
     width: 100%;
     left: 0;
     z-index: 200;
+    background-color: #afc39e;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand1 {
+    background-image: url('/images/brand1.png');
+    background-repeat: no-repeat;
+    background-size: 321px 50px;
+    margin-top: -5px;
+    width: 321px;
+    height: 50px;
+    display: inline-block;
+}
+
+.brandx {
+    background-image: url('/images/logoweb-rose.png');
+    background-repeat: no-repeat;
+    background-size: 320px 50px;
+    margin-top: -5px;
+    width: 320px;
+    height: 50px;
+    display: inline-block;
 }
 
 #nav a {
@@ -58,6 +81,11 @@ a {
     padding-bottom: 10px;
     padding-left: 30px;
     height: 30px;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .block {
@@ -120,7 +148,7 @@ a {
     min-width: 640px;
     width: 640px;
     position: relative;
-    z-index: 100;
+    z-index: 1;
     margin-top: 10px;
 }
 

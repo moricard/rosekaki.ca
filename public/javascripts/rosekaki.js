@@ -37,14 +37,14 @@ $(document).ready(function() {
 
         var scrollTop = getScrollTop()
         ,   logoOffset = logo.offset().top
-        ,   navOffset = Math.min( 0, (scrollTop *0.2) - 50);
+        ,   navOffset = Math.min( 0, (scrollTop * 0.05) - 50);
 
         subLogo.css({
-            'top' : (scrollTop * 0.6 + 88) + 'px'
+            'top' : (scrollTop * 0.5 + 88) + 'px'
         });
 
         arrow.css({
-            'top' : (scrollTop * 0.6 + 288) + 'px'
+            'top' : (scrollTop * 0.3 + 288) + 'px'
         });
 
         logo.css({'top' : (scrollTop * 0.6) + 'px'});
