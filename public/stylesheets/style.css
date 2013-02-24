@@ -91,12 +91,24 @@ a {
 }
 
 #green-blocker {
-    width: 100%;
+    width: 200%;
     background-color: #afc39e;
-    height: 120px;
+    height: 80px;
     position: absolute;
     visibility: hidden;
-    top: 0;
+    top: 90px;
+    left: -50%;
+    z-index: -1;    
+}
+
+#pink-blocker {
+    width: 200%;
+    background-color: #c93e6d;
+    height: 80px;
+    position: absolute;
+    visibility: visible;
+    top: 90px;
+    left: -50%;
     z-index: -1;    
 }
 
@@ -121,6 +133,42 @@ a {
     height: 50px;
 }
 
+.brand2 {
+    background-image: url('/images/rose.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.brand3 {
+    background-image: url('/images/deep-rose.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.brand4 {
+    background-image: url('/images/gored.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.brand5 {
+    background-image: url('/images/luzerne.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
 #top-pad {
     text-align: right;
 }
@@ -134,9 +182,19 @@ a {
     z-index: 1;
 }
 
+#logo-sub-sub {
+    background-image: url('/images/arrow.png');
+    height: 69px;
+    width: 29px;
+    position: relative;
+    top: 200px;
+    left: 50%;
+    z-index: 1;
+}
+
 #block-2 {
     padding-top: 100px;
-    background-color: #f3eeda;
+    background-color: #afc39e;
     z-index: 2;
     position: relative;
     text-align: justify;
@@ -146,14 +204,32 @@ a {
 
 #block-3 {
     color: #200605;
+    padding-top: 100px;
+    background-color: #f3eeda;
     z-index: 3;
     position: relative;
     text-align: justify;
     padding-bottom: 100px;
+    border: 1px solid #afc39e;
+    border-top: none;
 }
 
 #block-4 {
     text-align: justify;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border:1px solid #afc39e;
+    background-color: #afc39e;
+    border-top: none;
+
+}
+#block-5 {
+    text-align: justify;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border:1px solid #afc39e;
+    background-color: #f3eeda;
+    border-top: none;
 
 }
 

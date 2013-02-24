@@ -4,6 +4,7 @@ $(document).ready(function() {
     ,   margin = 200
     ,   logo = $('#logo')
     ,   subLogo = $('#logo-sub')
+    ,   arrow = $('#logo-sub-sub')
     ,   greenBlocker = $('#green-blocker')
     ,   redBlocker = $('#red-blocker')
     ,   nav = $('#nav')
@@ -20,7 +21,7 @@ $(document).ready(function() {
 
         $('html:not(:animated),body:not(:animated)')
             .animate({
-                scrollTop: destination - 80 
+                scrollTop: destination - 150 
             }, 1200
              , function() {
                  window.location.hash = elementClicked;
@@ -40,6 +41,10 @@ $(document).ready(function() {
 
         subLogo.css({
             'top' : (scrollTop * 0.6 + 88) + 'px'
+        });
+
+        arrow.css({
+            'top' : (scrollTop * 0.6 + 288) + 'px'
         });
 
         logo.css({'top' : (scrollTop * 0.6) + 'px'});
