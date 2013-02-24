@@ -39,8 +39,14 @@ a {
     text-shadow: none!important;
 }
 
+#nav a:hover{
+    color: #c94e6a!important;
+    text-shadow: none!important;
+}
+
 #nav li:hover{
-    background-color: #c94e6a;
+    color: #c94e6a;
+    background-color: #200605;
 }
 
 .navbar-inner {
