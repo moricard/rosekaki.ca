@@ -1,0 +1,157 @@
+/** La palette... 
+
+Luzerne: #afc39e
+Shore:   #f3eeda
+Cravat:  #200605
+Monokini: #c94e6d
+Gored:    #5b002c
+
+*/
+
+@font-face { font-family: Caslon; src: url('ACaslonPro-Regular.otf'); }
+
+body {
+  font: 18px Caslon, Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f3eeda;
+  color: #200605;
+}
+
+a {
+  color: #c94e6a;
+}
+
+.block {
+    width: 100%;
+    left: 0;
+    padding: 0 0 0 0;
+    height: 500px;
+    margin: 0 0 0 0;
+}
+
+#block-1 {
+    z-index: 1;
+    margin-top: 200px;
+    height: 600px;
+}
+
+.block > div {
+    position: relative;
+    width: 640px;
+    height: 500px;
+    margin: 0 auto;
+    top: 100px;
+}
+
+#logo {
+    background-image: url('/images/logoweb-rose.png');
+    background-repeat: no-repeat;
+    min-height: 88px;
+    height: 100px;
+    min-width: 640px;
+    width: 640px;
+    position: relative;
+    z-index: 100;
+    margin-top: 10px;
+}
+
+#nav {
+    width: 600px;
+    height: 50px;
+    /*background-color: #200605;*/
+    color: #c94e6d;
+    position: fixed;
+    top: 26px;
+    left: -600px;
+    margin: 0 auto;
+    z-index: 110;
+    text-align: right;
+}
+
+#brand {
+    background-image: url('/images/rose.png');
+    width: 100px;
+    height: 100px;
+}
+
+#nav > ul li {
+    border-left: 1px solid #200605;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#logo-sub {
+    background-image: url('/images/logoweb-sub.png');
+    height: 88px;
+    position: relative;
+    top: 88px;
+    z-index: 1;
+}
+
+#block-2 {
+    background-color: #afc39e;
+    z-index: 2;
+    position: relative;
+    height: 600px;
+}
+
+#sand-blocker {
+    width: 100%;
+    background-color: #f3eeda;
+    height: 100px;
+    position: fixed;
+    visibility: visible;
+    top: 0;
+    z-index: 10;
+}
+
+
+#green-blocker {
+    width: 100%;
+    background-color: #afc39e;
+    height: 90px;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    z-index: 10;
+}
+
+#red-blocker {
+    width: 100%;
+    background-color: #5b002c;
+    height: 90px;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    z-index: 20;
+}
+
+#block-3 {
+    background-color: #f3eeda;
+    color: #200605;
+    z-index: 3;
+    position: relative;
+    height: 700px;
+}
+
+#block-4 {
+    
+}
+
+.logo-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    height: 88px !important;
+}
+
+.txt {
+    width: 600px;
+    text-align: justify;
+    position: relative;
+}
