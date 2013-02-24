@@ -14,19 +14,36 @@ body {
   font: 18px Caslon, Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #f3eeda;
+  background-color: #f3eeda !important;
   color: #200605;
 }
 
 a {
-  color: #c94e6a;
+  color: #c94e6a !important;
+}
+
+.navbar {
+    position: fixed;
+    top : -130px;
+    width: 100%;
+    left: 0;
+    z-index: 200;
+}
+
+.navbar-inner {
+    background-image: none !important;
+    background-color: #afc39e !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
 }
 
 .block {
     width: 100%;
     left: 0;
     padding: 0 0 0 0;
-    height: 500px;
     margin: 0 0 0 0;
 }
 
@@ -39,7 +56,6 @@ a {
 .block > div {
     position: relative;
     width: 640px;
-    height: 500px;
     margin: 0 auto;
     top: 100px;
 }
@@ -56,33 +72,14 @@ a {
     margin-top: 10px;
 }
 
-#nav {
-    width: 600px;
-    height: 50px;
-    /*background-color: #200605;*/
-    color: #c94e6d;
-    position: fixed;
-    top: 26px;
-    left: -600px;
-    margin: 0 auto;
-    z-index: 110;
-    text-align: right;
-}
-
-#brand {
+.brand {
     background-image: url('/images/rose.png');
+    background-repeat: no-repeat;
     width: 100px;
     height: 100px;
+    margin-left: 30px !important;    
 }
 
-#nav > ul li {
-    border-left: 1px solid #200605;
-    display: inline;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    padding: 10px;
-}
 
 #logo-sub {
     background-image: url('/images/logoweb-sub.png');
@@ -99,47 +96,12 @@ a {
     height: 600px;
 }
 
-#sand-blocker {
-    width: 100%;
-    background-color: #f3eeda;
-    height: 100px;
-    position: fixed;
-    visibility: visible;
-    top: 0;
-    z-index: 10;
-}
-
-
-#green-blocker {
-    width: 100%;
-    background-color: #afc39e;
-    height: 90px;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    z-index: 10;
-}
-
-#red-blocker {
-    width: 100%;
-    background-color: #5b002c;
-    height: 90px;
-    position: fixed;
-    visibility: hidden;
-    top: 0;
-    z-index: 20;
-}
 
 #block-3 {
-    background-color: #f3eeda;
+    background-color: #5b002c;
     color: #200605;
     z-index: 3;
     position: relative;
-    height: 700px;
-}
-
-#block-4 {
-    
 }
 
 .logo-box {
@@ -148,10 +110,4 @@ a {
     width: 100%;
     position: relative;
     height: 88px !important;
-}
-
-.txt {
-    width: 600px;
-    text-align: justify;
-    position: relative;
 }
