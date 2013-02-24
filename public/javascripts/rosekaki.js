@@ -11,13 +11,25 @@ $(document).ready(function() {
 
     $('#block-1').height( height - margin );
 
+    //Smooth scrolling
+    $('.scrollpage').click(function() {
+        var elementClicked = $(this).attr("href");
+        var destination = $(elementClicked).offset().top;
+        $('html:not(:animated),body:not(:animated)').animate({ scrollTop: destination - 200 }, 1200, function() {
+            window.location.hash = elementClicked;
+        });
+        
+        return false;
+    }); 
+
+
     $(window).scroll(function() {
 	
 	//parallax
 
         var scrollTop = getScrollTop()
         ,   logoOffset = logo.offset().top
-        ,   navOffset = Math.min( 100, (scrollTop *0.3) - 130);
+        ,   navOffset = Math.min( 120, (scrollTop *0.2) - 50);
 
         subLogo.css({
             'top' : (scrollTop * 0.6 + 88) + 'px'

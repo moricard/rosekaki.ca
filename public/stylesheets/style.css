@@ -11,7 +11,7 @@ Gored:    #5b002c
 @font-face { font-family: Caslon; src: url('ACaslonPro-Regular.otf'); }
 
 body {
-  font: 18px Caslon, Helvetica, Arial, sans-serif;
+  font: 18px Caslon, Helvetica, Arial, sans-serif !important;
   padding: 0;
   margin: 0;
   background-color: #f3eeda !important;
@@ -24,10 +24,19 @@ a {
 
 .navbar {
     position: fixed;
-    top : -130px;
+    top : -50px;
     width: 100%;
     left: 0;
     z-index: 200;
+}
+
+#nav a {
+    color : #200605!important;
+    text-shadow: none!important;
+}
+
+#nav li:hover{
+    background-color: #c94e6a;
 }
 
 .navbar-inner {
@@ -64,11 +73,21 @@ a {
 #sand-blocker {
     width: 100%;
     background-color: #f3eeda;
-    height: 100px;
+    height: 120px;
     position: fixed;
     visibility: visible;
     top: 0;
     z-index: 10;
+}
+
+#green-blocker {
+    width: 100%;
+    background-color: #afc39e;
+    height: 120px;
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    z-index: 9;    
 }
 
 #logo {
@@ -101,18 +120,20 @@ a {
 }
 
 #block-2 {
-    background-color: #afc39e;
+    padding-top: 100px;
+    background-color: #f3eeda;
     z-index: 2;
     position: relative;
-    height: 600px;
+    text-align: justify;
+    padding-bottom: 100px;
 }
 
 
 #block-3 {
-    background-color: #5b002c;
     color: #200605;
     z-index: 3;
     position: relative;
+    text-align: justify;
 }
 
 .logo-box {
