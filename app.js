@@ -28,6 +28,9 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/2', function( req, res ) {
+  res.render('index2', { title: 'Express' });
+});
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
