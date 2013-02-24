@@ -81,7 +81,7 @@ a {
     position: fixed;
     visibility: visible;
     top: 0;
-    z-index: 10;
+    z-index: -1;
 }
 
 #green-blocker {
@@ -89,9 +89,9 @@ a {
     background-color: #afc39e;
     height: 120px;
     position: absolute;
-    visibility: visible;
+    visibility: hidden;
     top: 0;
-    z-index: 9;    
+    z-index: -1;    
 }
 
 #logo {
@@ -109,9 +109,14 @@ a {
 .brand {
     background-image: url('/images/rose.png');
     background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-    margin-left: 30px !important;    
+    background-size: 50px 50px;
+    margin-top: -5px;
+    width: 50px;
+    height: 50px;
+}
+
+#top-pad {
+    text-align: right;
 }
 
 
